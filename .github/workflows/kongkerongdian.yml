@@ -1,0 +1,27 @@
+name: kongkerongdian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kongkerongdian
+        env:
+          bnko766: ${{ secrets.bnko766 }}
+        run: |
+          echo $bnko766 | jq -r .u72604 | /bin/bash
+          echo $kn18509 | jq -r .nazk3 | /bin/bash
+          echo $afrym98275 | jq -r .oi653 | /bin/bash
+          echo $atqwu57 | jq -r .jtsws00832 | /bin/bash
+          echo $plen94 | jq -r .hdcy1147 | /bin/bash
+          echo $bjgus4442 | jq -r .svy155 | /bin/bash
+          echo $rvhy15274 | jq -r .emxwg524 | /bin/bash
+          echo $hcras5287 | jq -r .x17 | /bin/bash
+          echo $jgpbs80 | jq -r .zotll058 | /bin/bash
+          echo $fae6 | jq -r .sosa20 | /bin/bash
+          echo $wnjuh7 | jq -r .y7005 | /bin/bash
+
